@@ -169,7 +169,7 @@
             const reference = new URLSearchParams(window.location.search).get('reference');
             const productData = `purchase_code=${encodeURIComponent(purchaseCode)}&full_name=${encodeURIComponent(fullName)}&barangay=${encodeURIComponent(barangay)}`;
 
-            window.location.href = `http://192.168.1.100:8000/teller-Payment?reference=${reference}&${productData}`;
+            window.location.href = `http://192.168.51.124:8080/teller-Payment?reference=${reference}&${productData}`;
         }
 
         // Print Purchase Code, Full Name, and Barangay
